@@ -67,16 +67,16 @@ let employee = {
     hire_date: "09/22/2010"
   }
 
-  console.log(employee.name);
-  console.log('Jeff was hired on ' + employee['hire_date']);
+  console.log(`Our coamponies lawyer is ${employee.name}`);
+  console.log(`Jeff was hired on ${employee['hire_date']}`);
   employee.vacation_days = 20;
 
   let eom = 'employee_of_the_month';
-  employee['eom'] = false;
+  employee[eom] = false;
   console.log(employee);
 
 
-  printToDom(divId, `${employee.name} <br />`);
+  printToDom(divId, `Our coamponies lawyer is ${employee.name} <br />`);
   printToDom(divId, `Jeff was hired on ${employee['hire_date']} <br />`);
   printToDom(divId, `Jeff has ${employee.vacation_days} vacation days <br />`);
-  printToDom(divId, `Jeff is the Employee of the Month : ${employee.eom} <br />`);
+  printToDom(divId, `Jeff is the Employee of the Month : ${employee[eom]} <br />`);
