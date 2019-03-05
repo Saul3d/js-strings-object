@@ -1,4 +1,8 @@
 body{
     background-color:rgb(17, 105, 219);
     color:#fff;
+    font-family: sans-serif;
+}
+p{
+    text-transform: uppercase;
 }
